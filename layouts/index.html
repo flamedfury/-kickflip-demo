@@ -1,0 +1,27 @@
+        {{ define "main" }}
+        <!-- intro -->
+        <article>
+            <header>
+                <h1 class="index-header">Welcome to {{ .Title }}</h1>
+            </header>
+            <section class="content">
+                <p>{{ .Site.Params.homeText | markdownify }}</p>
+            </section>
+        </article>
+
+        <!-- post list -->
+        {{ range (.Paginate ( first 10 .Site.RegularPages.ByPublishDate.Reverse )).Pages }}
+        <article>
+            <header>
+                <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            </header>
+            <section class="content">
+                <p>{{ .Summary }}</p>
+                {{ if .Truncated }}
+                <p><a href="{{ .RelPermalink }}">Read More</a></p>
+                {{ else }}
+                {{ end }}
+            </section>
+        </article>
+        {{ end }}
+        {{ end }}
