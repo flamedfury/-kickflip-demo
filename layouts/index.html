@@ -10,7 +10,7 @@
         </article>
 
         <!-- post list -->
-        {{ range (.Paginate ( first 100 .Pages.ByPublishDate.Reverse )).Pages }}
+        {{ range (.Paginate ( first 100 .Site.RegularPages.ByPublishDate.Reverse )) }}
         <article>
             <header>
                 <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
