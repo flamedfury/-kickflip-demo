@@ -1,6 +1,7 @@
 baseURL = "https://practical-beaver-f592e0.netlify.com/"
 languageCode = "en-us"
 title = "kickFLIP"
+paginate = 100
 
 [permalinks]
   posts = "/:filename/"

@@ -20,8 +20,13 @@
                 {{ if .Truncated }}
                 <p><a href="{{ .RelPermalink }}">Read More</a></p>
                 {{ else }}
+                
                 {{ end }}
             </section>
         </article>
+        
         {{ end }}
+        <div class="extra-pagination"></div>
+            {{ partial "pagination.html" .Paginator }}
+        </div>
         {{ end }}

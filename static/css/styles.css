@@ -30,13 +30,6 @@ body {
   padding: 4em 1em;
 }
 
-
-
-/* footer {
-    height: 100px;
-    
-} */
-
 img,
 video {
   height: auto;
@@ -128,6 +121,59 @@ hr {
     font-size: 2rem;
     margin-top: 10px;
     margin-left: 0px;
+}
+
+/*------------------------------------*
+   Pagination - https://github.com/nirocfz/arabica/blob/cd28e4071b3731be51d09650aa0645ed3f41afc9/static/assets/css/screen.css#L493
+*------------------------------------*/
+
+/* The main wrapper for pagination links */
+.pagination {
+  position: relative;
+  margin: 2rem auto;
+  font-size: .9rem;
+  color: #9EABB3;
+  text-align: center;
+}
+
+/* Push the previous/next links out to the left/right */
+.older-posts,
+.newer-posts {
+  position: absolute;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.older-posts {
+  right: 0;
+}
+
+.page-number {
+  display: inline-block;
+  padding: 2px 0;
+  min-width: 100px;
+}
+
+.newer-posts {
+  left: 0;
+}
+
+.older-posts:hover,
+.newer-posts:hover {
+  color: #FC7E0F;
+}
+
+.extra-pagination {
+  display: none;
+}
+
+.extra-pagination .pagination {
+  width: auto;
+}
+
+/* On page2+ show extra pagination controls at the top of post list */
+.paged .extra-pagination {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {    
