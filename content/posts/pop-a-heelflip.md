@@ -17,6 +17,8 @@ A heelflip is the opposite of a kickflip, as the board spins towards the toes. F
 
 ### Variations
 Variations and extensions of the standard heelflip are very common - some of these are: 
+
+#### Heelflip Variations
 - Double Heelflip, where the board flips twice before being caught.
 - Triple Heelflip, where the board flips three times before being caught.
 - Laser flip, a combination of the Frontside 360 pop shove-it and the Heelflip. The opposite of a 360 flip.  

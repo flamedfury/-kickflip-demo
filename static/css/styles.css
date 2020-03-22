@@ -13,7 +13,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 100%; /* 16px */
   line-height: 1.5;
   min-height: 100vh;
   min-width: 300px;
@@ -24,7 +24,7 @@ body {
   background-color: #cecece;
   color: #414141;
   font-family: 'Noto Serif', 'Georgia', serif;
-  line-height: 1.5;
+  font-weight: 400;
   margin: 0 auto;
   max-width: 50em;
   padding: 4em 1em;
@@ -38,35 +38,33 @@ video {
 
 /* Typography */
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   color: #333;
-  font-family: 'Noto Serif', 'Georgia', serif;
-  font-weight: bold;
-  line-height: 1.2;
-  margin: 0 0 1em;
-  padding: 1em 0 0;
+  font-family: 'Noto Serif', serif;
+  font-weight: 500;
+  line-height: 1.15;
+  margin: 2.75rem 0 1.05rem;
   word-wrap: break-word;
 }
 
 h1 {
-  font-size: 6vw;
+  margin-top: 1em;
+  font-size: 3.052em;
 }
 
-.article-header {
-  margin-bottom: 1rem;
-}
+h2 {font-size: 2.441em;}
 
-.index-header {
-  font-size: 3vw;
-  margin-bottom: 1rem;
-}
+h3 {font-size: 1.953em;}
+
+h4 {font-size: 1.563em;}
+
+h5 {font-size: 1.25em;}
 
 p {margin-bottom: 1.15rem;}
 
 .small {
   display: block;
   font-size: 0.8em;
-  line-height: 1.5;
   margin-top: 20px;
   padding: 1em;
   text-align: center;
@@ -80,6 +78,10 @@ a {
   color: #e81c4f;
 }
 
+.index-header, .article-header {
+  font-weight: bold;
+}
+
 .post-title a{
   text-decoration: none;
 }
@@ -91,6 +93,14 @@ hr {
   border-top: 1px solid #333;
   margin: 1em 0;
   padding: 0;
+}
+
+ul {
+  margin-bottom: 1.05rem;
+}
+
+li {
+  line-height: 2;
 }
 
 /*------------------------------------*
