@@ -2,4 +2,4 @@
 title: About
 ---
 
-Hey, I'm fLaMEd. Nice to meet you.
+Hey, I'm Kickflip. Nice to meet you.
